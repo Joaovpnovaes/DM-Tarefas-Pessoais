@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Compromisso.Transacoes"
+             BackgroundColor="White"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand">
+
+            <!-- Título -->
+            <Label Text="Adicionar Receita ou Despesa"
+                   FontSize="24"
+                   TextColor="#FF4D074D"
+                   HorizontalOptions="Center" />
+
+            <!-- Campo para Descrição -->
+            <Entry x:Name="DescricaoEntry"
+                   Placeholder="Descrição da Transação"
+                   FontSize="18"
+                   TextColor="Black"
+                   BackgroundColor="#F5F5F5"
+                   WidthRequest="300" />
+
+            <!-- Campo para Valor -->
+            <Entry x:Name="ValorEntry"
+                   Placeholder="Valor (ex: 100.50)"
+                   Keyboard="Numeric"
+                   FontSize="18"
+                   TextColor="Black"
+                   BackgroundColor="#F5F5F5"
+                   WidthRequest="300" />
+
+            <!-- Seletor de Tipo de Transação -->
+            <Picker x:Name="TipoPicker"
+                    Title="Selecione o Tipo"
+                    FontSize="18"
+                    WidthRequest="300">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Receita</x:String>
+                        <x:String>Despesa</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <!-- Seletor de Categoria -->
+            <Picker x:Name="CategoriaPicker"
+                    Title="Selecione a Categoria"
+                    FontSize="18"
+                    WidthRequest="300" />
+
+            <!-- Botão para Adicionar Transação -->
+            <Button Text="Adicionar Transação"
+                    BackgroundColor="#007bff"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontSize="18"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                     />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

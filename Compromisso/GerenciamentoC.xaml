@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Compromisso.GerenciamentoC"
+             BackgroundColor="White"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand">
+
+            <!-- Título da Tela -->
+            <Label Text="Gerenciamento de Contas"
+                   FontSize="24"
+                   TextColor="#FF4D074D"
+                   HorizontalOptions="Center" />
+
+            <!-- Botão Criar Conta -->
+            <Button Text="Criar Nova Conta"
+                    BackgroundColor="#007bff"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontSize="18"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                     />
+
+            <!-- Botão Editar Conta -->
+            <Button Text="Editar Conta"
+                    BackgroundColor="#007bff"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontSize="18"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                     />
+
+            <!-- Botão Visualizar Saldo -->
+            <Button Text="Visualizar Saldo"
+                    BackgroundColor="#007bff"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontSize="18"
+                    WidthRequest="250"
+                    HeightRequest="50"
+                     />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

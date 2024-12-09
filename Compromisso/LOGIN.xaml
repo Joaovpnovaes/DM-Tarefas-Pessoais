@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Compromisso.LOGIN"
+             Title="LOGIN" 
+             BackgroundColor = "white">
+    
+    
+    <VerticalStackLayout Padding="50" Spacing="70">
+         <Image Source="logo.png" 
+       Aspect="AspectFit"
+       HeightRequest="100"
+       WidthRequest="100" />
+       <Label Padding="2"
+        Text="Aplicativo de Controle Financeiro Pessoal" 
+        TextColor="#FF4D074D"
+       VerticalOptions="Center" 
+       HorizontalOptions="Center"
+       FontSize="25" 
+       FontFamily="OpenSansBold" />
+         <Label Text="Faça o seu Login" 
+       VerticalOptions="Center" 
+       HorizontalOptions="Center"
+       FontSize="25" 
+       FontFamily="OpenSansBold" />
+
+         <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+        <Button Text="Logar" 
+                BackgroundColor="#007bff" 
+                TextColor="white" 
+                CornerRadius="25" 
+                WidthRequest="100" 
+                Clicked="ABRIR_MENU" />
+
+        <Button Text="Cadastrar" 
+                BackgroundColor="#007bff" 
+                TextColor="white" 
+                CornerRadius="25" 
+                WidthRequest="100" 
+                Clicked="LOGAR_SISTEMA" />
+    </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
