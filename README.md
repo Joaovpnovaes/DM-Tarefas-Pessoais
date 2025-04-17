@@ -41,3 +41,8 @@ VS Code ou Android Studio
 
 Emulador ou dispositivo físico conectado
 
+✍️ Creditos
+
+João Victor Pires Novaes 
+Luiz Felipe Bastião
+
