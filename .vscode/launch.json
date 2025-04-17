@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DM-Tarefas-Pessoais",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "DM-Tarefas-Pessoais (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "DM-Tarefas-Pessoais (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "tarefas_pessoais",
+            "cwd": "tarefas_pessoais",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "tarefas_pessoais (profile mode)",
+            "cwd": "tarefas_pessoais",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "tarefas_pessoais (release mode)",
+            "cwd": "tarefas_pessoais",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
