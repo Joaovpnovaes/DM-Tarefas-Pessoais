@@ -43,6 +43,5 @@ Emulador ou dispositivo físico conectado
 
 ✍️ Creditos
 
-João Victor Pires Novaes 
-Luiz Felipe Bastião
+João Victor Pires Novaes e Luiz Felipe Bastião
 
