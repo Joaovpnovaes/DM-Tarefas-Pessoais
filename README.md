@@ -15,8 +15,8 @@ Um aplicativo Flutter simples para organização de tarefas.
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Joaovpnovaes/DM-Tarefas-Pessoais.git
-   cd DM-Tarefas-Pessoais.git
+   git clone https://github.com/seu-usuario/tarefas_pessoais.git
+   cd tarefas_pessoais
 
 2. Instale as dependências:
 

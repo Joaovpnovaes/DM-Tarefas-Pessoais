@@ -68,6 +68,22 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  void _mostrarDialogoCreditos() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Créditos'),
+        content: const Text('App desenvolvido por João Victor Pires Novaes e Luiz Felipe Bastião'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Fechar'),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,24 +97,42 @@ class _HomePageState extends State<HomePage> {
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
-          children: const [
-            DrawerHeader(
+          children: [
+            const DrawerHeader(
               decoration: BoxDecoration(color: Colors.indigo),
               child: Text('Menu', style: TextStyle(color: Colors.white, fontSize: 24)),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.home),
               title: Text('Início'),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(Icons.settings),
               title: Text('Configurações'),
+            ),
+            ListTile(
+              leading: const Icon(Icons.people),
+              title: const Text('Créditos'),
+              onTap: _mostrarDialogoCreditos,
             ),
           ],
         ),
       ),
       body: _tarefas.isEmpty
-          ? const Center(child: Text('Nenhuma tarefa adicionada.'))
+          ? Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'assets/logo.jpg',
+                    width: 150,
+                    height: 150,
+                  ),
+                  const SizedBox(height: 20),
+                  const Text('Nenhuma tarefa adicionada.'),
+                ],
+              ),
+            )
           : ListView.builder(
               itemCount: _tarefas.length,
               itemBuilder: (context, index) => ListTile(
