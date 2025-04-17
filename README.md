@@ -18,14 +18,23 @@ Um aplicativo Flutter simples para organização de tarefas.
    git clone https://github.com/joaovpnovaes/DM-Tarefas-Pessoais.git
    cd DM-Tarefas-Pessoais
 
-2. Instale as dependências:
+2. Abrir no VS Code
+
+Se você já está no VS Code, pode rodar:
+
+code .
+
+3. Instalar as dependências do Flutter
+
+No terminal do VS Code (ou qualquer terminal aberto na pasta do projeto):
 
 flutter pub get
 
-3. Rode o app:
+4. Rodar o app
+
+No terminal:
 
 flutter run
-
 
 📁 Estrutura
 lib/main.dart: código principal do app
